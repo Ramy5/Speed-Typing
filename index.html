@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Speed Typing</title>
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <div class="game">
+      <h2 class="name-game">Speed Typing Test Game</h2>
+      <!-- popup -->
+      <div class="popup hidden">
+        <div>3</div>
+      </div>
+      <!-- popup -->
+      <div class="container">
+        <div class="levels">
+          <div class="again hidden">
+            <button class="btn-again">Play Again!</button>
+          </div>
+          <select class="lvl-select" name="levels">
+            <option class="easy" value="easy">Easy</option>
+            <option selected class="normal" value="normal">Normal</option>
+            <option class="hard" value="hard">Hard</option>
+          </select>
+        </div>
+        <div class="lvl-description">
+          You are playing in <span class="lvl-name"></span> level, and you have
+          <span class="lvl-socend"></span> seconds to write the word.
+        </div>
+        <button type="button" class="start">Start playing</button>
+        <div class="the-word"></div>
+        <input class="word-input" type="text" placeholder="Start Typing" />
+        <div class="upcoming-word"></div>
+        <div class="control">
+          <div class="speed"><span class="speed-left"></span> seconds left</div>
+          <div class="score">
+            Score <span class="score-from"></span> from
+            <span class="total"></span>
+          </div>
+        </div>
+        <div class="finish"></div>
+      </div>
+    </div>
+    <script src="js/main.js"></script>
+  </body>
+</html>
