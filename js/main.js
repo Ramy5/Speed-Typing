@@ -253,6 +253,7 @@ select.addEventListener("click", function () {
 
 // when click on start playing button
 startPlay.addEventListener("click", function () {
+  defaultData();
   finish.textContent = "";
   inputField.focus();
   // show play again button
